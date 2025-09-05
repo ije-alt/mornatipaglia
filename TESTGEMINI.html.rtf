@@ -1,0 +1,285 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="it">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Analisi della Posizione Competitiva</title>\
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">\
+    <style>\
+        :root \{\
+            --bg-dark: #111827;\
+            --bg-card: #1f2937;\
+            --header-blue: #2563eb;\
+            --text-green: #4ade80;\
+            --text-red: #f87171;\
+            --border-gray: #374151;\
+            --table-header: #374151;\
+            --table-row-odd: #1f2937;\
+            --table-row-even: #111827;\
+        \}\
+\
+        body \{\
+            font-family: 'Inter', sans-serif;\
+            background-color: var(--bg-dark);\
+            color: #d1d5db;\
+            padding: 2rem;\
+            line-height: 1.6;\
+        \}\
+\
+        .container \{\
+            max-width: 960px;\
+            margin: auto;\
+        \}\
+\
+        .card \{\
+            background-color: var(--bg-card);\
+            border-radius: 1rem;\
+            padding: 2rem;\
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\
+        \}\
+\
+        h1, h2, h3 \{\
+            font-weight: 600;\
+        \}\
+        \
+        h1 \{\
+            color: #e5e7eb;\
+            font-size: 2.25rem;\
+            margin-bottom: 1.5rem;\
+        \}\
+\
+        h2 \{\
+            font-size: 1.75rem;\
+            color: #9ca3af;\
+            border-bottom: 2px solid var(--border-gray);\
+            padding-bottom: 0.5rem;\
+            margin-top: 2rem;\
+            margin-bottom: 1rem;\
+        \}\
+\
+        h3 \{\
+            font-size: 1.25rem;\
+            color: #d1d5db;\
+            margin-bottom: 0.75rem;\
+        \}\
+\
+        .header \{\
+            background-color: var(--header-blue);\
+            color: white;\
+            padding: 1rem;\
+            border-radius: 0.75rem;\
+            margin-bottom: 1.5rem;\
+            text-align: center;\
+        \}\
+\
+        .highlight-green \{\
+            color: var(--text-green);\
+            font-weight: 600;\
+        \}\
+\
+        .highlight-red \{\
+            color: var(--text-red);\
+            font-weight: 600;\
+        \}\
+\
+        .bullet-list \{\
+            list-style: none;\
+            padding-left: 0;\
+            margin-bottom: 1.5rem;\
+        \}\
+\
+        .bullet-list li:before \{\
+            content: "\'95";\
+            color: var(--header-blue);\
+            font-weight: bold;\
+            display: inline-block;\
+            width: 1em;\
+            margin-left: -1em;\
+        \}\
+\
+        .metric-card \{\
+            background-color: var(--border-gray);\
+            border-radius: 0.5rem;\
+            padding: 1rem;\
+            text-align: center;\
+            margin-bottom: 1rem;\
+        \}\
+\
+        .metric-value \{\
+            font-size: 2rem;\
+            font-weight: 700;\
+        \}\
+\
+        table \{\
+            width: 100%;\
+            border-collapse: collapse;\
+            margin-top: 1rem;\
+            margin-bottom: 1.5rem;\
+            font-size: 0.9rem;\
+        \}\
+\
+        th, td \{\
+            padding: 0.75rem 1rem;\
+            text-align: left;\
+            border-bottom: 1px solid var(--border-gray);\
+        \}\
+\
+        thead \{\
+            background-color: var(--table-header);\
+            color: #e5e7eb;\
+        \}\
+\
+        tbody tr:nth-child(odd) \{\
+            background-color: var(--table-row-odd);\
+        \}\
+\
+        tbody tr:nth-child(even) \{\
+            background-color: var(--table-row-even);\
+        \}\
+\
+        .download-button \{\
+            position: fixed;\
+            bottom: 2rem;\
+            right: 2rem;\
+            background-color: var(--header-blue);\
+            color: white;\
+            border: none;\
+            border-radius: 0.5rem;\
+            padding: 0.75rem 1.5rem;\
+            font-size: 1rem;\
+            cursor: pointer;\
+            transition: background-color 0.3s ease;\
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\
+        \}\
+\
+        .download-button:hover \{\
+            background-color: #3b82f6;\
+        \}\
+\
+        .button-cta \{\
+            background-color: var(--header-blue);\
+            color: white;\
+            border: none;\
+            border-radius: 0.5rem;\
+            padding: 0.75rem 1.5rem;\
+            font-size: 1rem;\
+            cursor: pointer;\
+            text-decoration: none;\
+            display: inline-block;\
+            transition: background-color 0.3s ease;\
+        \}\
+\
+        .button-cta:hover \{\
+            background-color: #3b82f6;\
+        \}\
+\
+        .chart-img \{\
+            max-width: 100%;\
+            height: auto;\
+            border-radius: 0.5rem;\
+            margin-top: 1rem;\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <div class="container">\
+        <div class="card">\
+            \
+            <div class="header">\
+                <h1>Analisi della Posizione Competitiva</h1>\
+            </div>\
+\
+            <section>\
+                <h2>La Tua Situazione di Mercato</h2>\
+                <h3>Panoramica Generale</h3>\
+                <ul class="bullet-list">\
+                    <li><strong>1.394</strong> prodotti attivi nel tuo catalogo con prezzi validi.</li>\
+                    <li>Monitoraggio di <strong>2.092 competitor</strong> su <strong>75.678</strong> prodotti concorrenti.</li>\
+                    <li>Prezzo medio dei tuoi prodotti: <strong>29,62 EUR</strong> (mediano: 19,99 EUR).</li>\
+                    <li>I tuoi competitor hanno un prezzo medio di <strong>35,87 EUR</strong> (mediano: 26,31 EUR).</li>\
+                </ul>\
+            </section>\
+\
+            <section>\
+                <h2>Posizione Competitiva</h2>\
+                <p>La distribuzione dei tuoi prodotti in base alla posizione di prezzo nel mercato:</p>\
+                <img src="https://i.ibb.co/L9H8XqL/image-1f7ad1.png" alt="Grafico a barre della distribuzione per posizione di prezzo" class="chart-img">\
+                <p>I tuoi punti di forza:</p>\
+                <ul class="bullet-list">\
+                    <li>Sei <span class="highlight-green">leader di prezzo</span> su <strong>95</strong> prodotti (6,8% del catalogo).</li>\
+                    <li>Su <strong>365</strong> prodotti (26%) ti posizioni nei primi 3 posti del mercato.</li>\
+                    <li>Il tuo indice prezzi medio \'e8 <span class="highlight-green">119,5</span>, indicando prezzi leggermente sopra la media del mercato.</li>\
+                </ul>\
+                <p>Aree di miglioramento:</p>\
+                <ul class="bullet-list">\
+                    <li><span class="highlight-red">501</span> prodotti (36%) sono posizionati oltre la 10\'aa posizione.</li>\
+                    <li>Posizione media di prezzo: <strong>10,6</strong> (mediana: 7\'b0).</li>\
+                </ul>\
+            </section>\
+\
+            <section>\
+                <h2>Brand Performance</h2>\
+                <p>I tuoi brand pi\'f9 competitivi:</p>\
+                <ul class="bullet-list">\
+                    <li><strong>Legami:</strong> <span class="highlight-green">46%</span> dei prodotti in posizione di leader.</li>\
+                    <li><strong>Lego:</strong> 34 prodotti leader su 360 totali (<span class="highlight-green">9,4%</span>).</li>\
+                    <li><strong>Minix:</strong> forte posizione competitiva con il <span class="highlight-green">16,7%</span> di leadership.</li>\
+                </ul>\
+            </section>\
+\
+            <section>\
+                <h2>3 Strategie Semplici per Attivare le Vendite</h2>\
+                \
+                <h3>1. Ottimizza i Prodotti "Quasi Leader" \uc0\u55356 \u57263 </h3>\
+                <p>Concentrati sui <strong>270 prodotti</strong> in 2\'b0-3\'b0 posizione che hanno il potenziale per diventare leader di prezzo con piccoli aggiustamenti. Questi prodotti sono gi\'e0 competitivi e richiedono investimenti minimi per massimizzare le conversioni.</p>\
+                <p><strong>Azione immediata:</strong> Riduci i prezzi del 3-5% sui prodotti in 2\'b0-3\'b0 posizione nei brand Legami e Lego.</p>\
+                \
+                <h3>2. Strategia Premium sui Leader di Prezzo \uc0\u55357 \u56462 </h3>\
+                <p>Sui tuoi <strong>95 prodotti</strong> gi\'e0 leader di prezzo, testa aumenti graduali del 5-10% per massimizzare i margini. Se mantieni la leadership anche con prezzi pi\'f9 alti, aumenterai significativamente la redditivit\'e0.</p>\
+                <p><strong>Azione immediata:</strong> Inizia con 10-15 prodotti Legami leader di prezzo, aumentando gradualmente i prezzi.</p>\
+\
+                <h3>3. Riposiziona i Prodotti "Fuori Mercato" \uc0\u55357 \u56580 </h3>\
+                <p>I <strong>501 prodotti</strong> oltre la 10\'aa posizione potrebbero essere troppo cari per il mercato. Valuta riduzioni pi\'f9 aggressive (15-25%) o considera di concentrare gli sforzi sui prodotti pi\'f9 competitivi.</p>\
+                <p><strong>Azione immediata:</strong> Identifica 50 prodotti con i maggiori gap di prezzo e testa riduzioni del 20%.</p>\
+            </section>\
+\
+            <section>\
+                <h2>Raccomandazione Prioritaria</h2>\
+                <p>Inizia dalla <strong>Strategia 1</strong> sui brand Legami e Lego: hai il potenziale per convertire rapidamente 50-70 prodotti in leader di prezzo con aggiustamenti minimi, generando un impatto immediato sulle vendite.</p>\
+            </section>\
+            \
+            <section style="text-align: center; margin-top: 3rem;">\
+                <h2>Prenota una Riunione</h2>\
+                <p>Pianifica un incontro per discutere questa analisi e definire i prossimi passi.</p>\
+                <a href="https://meetings-eu1.hubspot.com/isabel-jerne?uuid=0295abaa-2678-485a-92f5-5a587742bcea" class="button-cta" target="_blank">Prenota un Incontro</a>\
+            </section>\
+\
+        </div>\
+    </div>\
+    \
+    <button id="downloadButton" class="download-button">Scarica Report</button>\
+\
+    <script>\
+        document.getElementById('downloadButton').addEventListener('click', function() \{\
+            var htmlContent = document.documentElement.outerHTML;\
+            var blob = new Blob([htmlContent], \{type: 'text/html'\});\
+            var a = document.createElement('a');\
+            a.href = URL.createObjectURL(blob);\
+            a.download = 'Analisi_Competitiva_Report.html';\
+            document.body.appendChild(a);\
+            a.click();\
+            document.body.removeChild(a);\
+        \});\
+    </script>\
+</body>\
+</html>}
